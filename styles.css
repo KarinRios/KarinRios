@@ -1,0 +1,316 @@
+body {
+	margin: 0px;
+}
+
+
+
+#encabezado {
+	background-color: #f0f0f0;
+	display: flex;
+	color: #ab7cb4;
+}
+
+#encabezado h1 {
+	line-height: 100px;
+	font-size: 34px;
+}
+
+#navegacion {
+	background-color: #ab7cb4;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
+}
+
+#navegacion ul {
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+}
+
+#navegacion ul li {
+	list-style: none;
+	border-right: 1px solid olive;
+	display: block;
+	text-align: center;
+}
+
+#navegacion ul li a {
+	text-decoration: none;
+	color: #f0f0f0;
+	font-weight: bold;
+	padding: 15px 18px;
+	display: flex;
+	text-align: center;
+}
+
+#navegacion ul li a:hover {
+	color: #f0f0f0;
+	background-color: #8e51a3;
+}
+
+
+#inicio h2 {
+	font-size:	3rem;
+	font-family: Times New Roman;
+	margin: 6px;
+}
+
+#inicio {
+	height: 100%;
+	font-size: 30px;
+	font-style: italic;
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 200px;
+
+
+}
+
+
+#piedepagina {
+	text-align: center;
+	color: #f0f0f0;
+	background-color: #333;
+	padding: 20px;
+}
+
+#piedepagina a {
+	text-decoration: none;
+	color: #f0f0f0;
+}
+#piedepagina i {
+	margin-top: 16px;
+	margin-left: 12px;
+	font-size: 24px;
+}
+
+#cuerpo {
+	text-align: center;
+	width: 70%;
+	margin-left: 3%;
+}
+
+#cuerpo p {
+	margin: 10px;
+	font-size: 18px;
+}
+
+#recursos, #noticias, #somos, #eventos, #contactos {
+	margin-bottom: 50px;
+	padding: 20px;
+}
+
+#inicio {
+	padding-top: 50px; 
+}
+
+
+
+#contactos {
+	margin-bottom: 0px;
+}
+
+#contacto{
+	width: 100%;
+ 	display: block;
+ 	text-align: center;
+}
+
+.caja-texto{
+ width:250px;
+ border-radius: 5px;
+ height: 25px;
+ padding-left: 5px;
+}
+.label-texto{
+ color: #8e51a3;
+ padding-top:15px;
+}
+.text-area{
+ width:250px;
+ border-radius: 5px;
+ height: 25px;
+ padding-left: 5px;
+ height: 150px;
+}
+.boton{
+ border-radius: 5px;
+ background-color: #8e51a3;
+ color: white;
+ height: 35px;
+ width: 120px;
+}
+.boton:hover{
+ border-radius: 5px;
+ background-color:#ab7cb4;
+ color:black;
+ height: 35px;
+ width: 120px;
+}
+
+
+article {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: 100%;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+
+img {
+	margin-top: 10px;
+
+}
+
+#banner {
+	float: right;
+	position: absolute;
+	right: 40px;
+}
+
+
+@media (max-width: 780px) {
+	#navegacion ul {
+		display: block;
+	}
+
+	#navegacion ul li a {
+		display: block;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	#navegacion {
+		position: relative;
+
+	}
+
+	#contacto {
+		margin-left: 0px;
+	}
+
+	#cuerpo {
+		margin-left: 0%;
+		width: 100%;
+	}
+
+
+	article {
+		width: 100%;
+		height: 100%;
+	}
+
+	#bannerlargoad, banner {
+  		width: 100%;
+  		height: 100%;
+
+  	}
+}
+
+@media (max-width: 1200px) {
+	#banner {
+		float: none;
+  		position: static;
+  		right: 0px;
+	}
+
+}
+
+.slideshow-container {
+  max-width: 70%;
+  max-height: 50%;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-left: 20%;
+}
+
+
+.slideshow-container img {
+	max-width: 70%;
+	max-height: 50%;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #ab7cb4; 
+}
+
+.prev {
+	left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
